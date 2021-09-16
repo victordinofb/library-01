@@ -13,6 +13,7 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
+          cache: 'maven'
       - name: Publish package
         run: mvn --batch-mode deploy
         env:
